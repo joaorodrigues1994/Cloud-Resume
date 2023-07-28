@@ -79,3 +79,7 @@ ul#exp-desc {
 li {
     margin-bottom: 0.5rem;
 }
+
+div.about-content {
+    text-align: justify;
+}
