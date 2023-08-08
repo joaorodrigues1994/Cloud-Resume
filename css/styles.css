@@ -6,6 +6,8 @@ body {
     padding: 0;
 }
 
+/*Inicio Formatacao do cabecalho*/
+
 header {
     background-color: #007BFF;
     color: #fff;
@@ -41,6 +43,29 @@ nav li:hover{
     background-color: #666666;
 }
 
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul#exp-desc {
+    list-style: circle;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+header#cabecalho a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+/*Fim formatacao do cabecalho*/
+
 main {
     max-width: 800px;
     margin: 0 auto;
@@ -71,19 +96,7 @@ section h3{
     padding-bottom: 0.5rem;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-ul#exp-desc {
-    list-style: circle;
-}
-
-li {
-    margin-bottom: 0.5rem;
-}
-
 div.about-content {
     text-align: justify;
 }
+
