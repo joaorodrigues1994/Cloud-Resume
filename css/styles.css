@@ -44,13 +44,9 @@ nav li:hover{
 }
 
 
-ul {
+ul#menu {
     list-style: none;
     padding-left: 0;
-}
-
-ul#exp-desc {
-    list-style: circle;
 }
 
 li {
@@ -99,4 +95,6 @@ section h3{
 div.about-content {
     text-align: justify;
 }
+
+/*Dropdown Menu das experiencias*/
 
