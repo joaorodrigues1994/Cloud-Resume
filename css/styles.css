@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -100,4 +100,24 @@ img.favs {
 /*Rodape*/
 footer#rodape {
     text-align: center;
+    padding: 1rem;
+}
+
+.contact-icons {
+    margin-bottom: 1rem;
+}
+
+.contact-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contact-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.contact-icons a:hover img {
+    transform: scale(1.1);
 }
