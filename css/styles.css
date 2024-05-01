@@ -121,3 +121,31 @@ footer#rodape {
 .contact-icons a:hover img {
     transform: scale(1.1);
 }
+
+/* Destacar o nome da empresa */
+.destaque {
+    background-color: rgba(238, 14, 25, 0.815);
+    padding: 5px 10px;
+    color: white;
+    display: inline-block; /* Isso garante que a div se ajuste ao tamanho do conteúdo */
+}
+
+/* Formatacao do botao de retornar ao Topo */
+.btnTopStyle {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.btnTopStyle:hover {
+    background-color: #333; /* Cor um pouco mais escura ao passar o mouse */
+}
+
+

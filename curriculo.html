@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joao - Cloud Resume Challenge - Curriculo</title>
+    <title>Joao - Cloud Resumé - Curriculo</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles-curriculo.css">
     <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="scripts/scripts.js"></script>
+
 </head>
 <body>
     <header id="cabecalho">
-        <h1>Cloud Resume Challenge - João Paulo</h1>
+        <h1>Cloud Resume - João Paulo</h1>
         <nav>
             <ul id="menu">
                 <a href="index.html"><li>Home</li></a>
                 <a href="curriculo.html"><li>Curriculo</li></a>
-                <li>Projetos</li>
             </ul>
         </nav>
     </header>
@@ -34,13 +35,29 @@
             <h2>Certificações <img class="favs" src="imagens/certs.png" alt="Certificações"></h2>
             <ul>
                 <li>AWS Cloud Pratictioner</li>
+                <li>Red Hat Certified System Administrator</li>
             </ul>
         </section>
         <section id="experience">
             <h2>Experiência Profissional</h2>
-            <p>Empresa: RTM - Rede de Telecomunicações para o Mercado</p>
+            <div class="destaque">Empresa: Eveo S.A</div>
             <ul>
-                <li><em>Cargo:</em> Analista de Infraestrutura Júnior. - 10/2018 - Atualmente</li>
+                <li><em>Cargo:</em> Analista de Suporte Pleno. - 02/2024 - Atualmente</li>
+                <ul>
+                    <li>Time de Suporte</li>
+                    <ul>
+                        <li>Suporte à ambiente Cloud Openstack com experiência no Dashboard Horizon.</li>
+                        <li>Configuração e gerenciamento de Firewall PFsense.</li>
+                        <li>Gerência de sistemas operacionais Linux Debian, Ubuntu, Redhat, AlmaLinux.</li>
+                        <li>Gerência de sistemas operacionais Windows Server Versões: 2012, 2012 R2, 2016 e 2019.</li>
+                        <li>Monitoramento pró-ativo do ambiente com Zabbix.</li>
+                        <li>Criação de procedimentos técnicos e documentação para auxiliar o time de Suporte.</li>
+                    </ul>
+                </ul>
+            </ul>
+            <div class="destaque">Empresa: RTM - Rede de Telecomunicações para o Mercado</div>
+            <ul>
+                <li><em>Cargo:</em> Analista de Infraestrutura Júnior. - 10/2018 - 01/2024</li>
                 <ul>
                     <li>Time de Ativações</li>
                     <ul>
@@ -67,5 +84,6 @@
             </ul>
         </section>
     </main>
+    <button onclick="topFunction()" id="btnTop" title="Voltar ao Topo" class="btnTopStyle">Topo</button>
 </body>
 </html>
