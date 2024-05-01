@@ -121,3 +121,12 @@ footer#rodape {
 .contact-icons a:hover img {
     transform: scale(1.1);
 }
+
+/* Destacar o nome da empresa */
+.destaque {
+    background-color: blue;
+    padding: 5px 10px;
+    color: white;
+    display: inline-block; /* Isso garante que a div se ajuste ao tamanho do conteúdo */
+}
+
