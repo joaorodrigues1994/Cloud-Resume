@@ -1,18 +1,34 @@
 // script.js
+let isScrolling = false;
+let lastScrollTop = 0;
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  const scrollTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+  if (isScrolling && scrollTop > lastScrollTop) {
+    isScrolling = false;
+  }
+  if (scrollTop > 20) {
     document.getElementById("btnTop").style.display = "block";
   } else {
     document.getElementById("btnTop").style.display = "none";
   }
+  lastScrollTop = scrollTop;
 }
 
 function topFunction() {
-  const scrollTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop); // Obtém a posição atual do scroll
-  if (scrollTop > 0) {
-    window.requestAnimationFrame(topFunction); // Cria a animação
-    window.scrollTo(0, scrollTop - scrollTop / 8); // Move a página para cima suavemente
-  }
+  if (isScrolling) return;
+  isScrolling = true;
+  lastScrollTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+  const scroll = () => {
+    const scrollTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+    if (scrollTop > 0 && isScrolling) {
+      window.scrollTo(0, scrollTop - scrollTop / 8);
+      requestAnimationFrame(scroll);
+    } else {
+      isScrolling = false;
+    }
+  };
+  scroll();
 }
